@@ -7,7 +7,6 @@ coverage/
 .env.test
 
 # production
-build/
 out/
 
 # misc

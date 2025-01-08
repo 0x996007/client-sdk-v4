@@ -13,52 +13,52 @@ export * from '../lib/constants';
  */
 
 // Chain ID
-export const DEV_CHAIN_ID = 'dydxprotocol-testnet';
-export const STAGING_CHAIN_ID = 'dydxprotocol-testnet';
-export const TESTNET_CHAIN_ID = 'dydx-testnet-4';
-export const LOCAL_CHAIN_ID = 'localdydxprotocol';
+export const DEV_CHAIN_ID = 'orderstory-dev';
+export const STAGING_CHAIN_ID = 'orderstory-staging';
+export const TESTNET_CHAIN_ID = 'orderstory-testnet';
+export const LOCAL_CHAIN_ID = 'orderstory-local';
 // For the deployment by DYDX token holders
-export const MAINNET_CHAIN_ID = 'dydx-mainnet-1';
+export const MAINNET_CHAIN_ID = 'dydxprotocol-testnet';
 
 // ------------ API URLs ------------
 export enum IndexerApiHost {
-  TESTNET = 'https://indexer.v4testnet.dydx.exchange/',
-  STAGING = 'https://indexer.v4staging.dydx.exchange/',
+  TESTNET = 'http://18.179.86.26:3002/',
+  STAGING = 'https://indexer.orderstory.xyz/',
   LOCAL = 'http://localhost:3002',
   // For the deployment by DYDX token holders
-  MAINNET = 'https://indexer.dydx.trade',
+  MAINNET = 'https://indexer.v4testnet.dydx.exchange/',
 }
 
 export enum IndexerWSHost {
-  TESTNET = 'wss://indexer.v4testnet.dydx.exchange/v4/ws',
-  STAGING = 'wss://indexer.v4staging.dydx.exchange/v4/ws',
+  TESTNET = 'ws://18.179.86.26:3003/v4/ws',
+  STAGING = 'wss://indexer.orderstory.xyz/v4/ws',
   LOCAL = 'ws://localhost:3003',
   // For the deployment by DYDX token holders
-  MAINNET = 'wss://indexer.dydx.trade/v4/ws',
+  MAINNET = 'wss://indexer.v4testnet.dydx.exchange/v4/ws',
 }
 
 export enum FaucetApiHost {
-  TESTNET = 'https://faucet.v4testnet.dydx.exchange',
+  TESTNET = 'https://faucet.orderstory.xyz',
 }
 
 export enum ValidatorApiHost {
-  TESTNET = 'https://test-dydx-rpc.kingnodes.com',
-  STAGING = 'https://validator.v4staging.dydx.exchange',
+  TESTNET = 'http://18.179.86.26:26657',
+  STAGING = 'https://validator.orderstory.xyz',
   LOCAL = 'http://localhost:26657',
   // For the deployment by DYDX token holders
-  MAINNET = 'https://dydx-ops-rpc.kingnodes.com:443',
+  MAINNET = 'https://test-dydx-rpc.kingnodes.com',
 }
 
 // ------------ Network IDs ------------
 
 export enum NetworkId {
-  TESTNET = 'dydx-testnet-4',
+  TESTNET = 'orderstory-testnet-1',
   // For the deployment by DYDX token holders
-  MAINNET = 'dydx-mainnet-1',
+  MAINNET = 'dydx-testnet-4',
 }
-export const NETWORK_ID_TESTNET: string = 'dydxprotocol-testnet';
+export const NETWORK_ID_TESTNET: string = 'orderstory-testnet';
 // For the deployment by DYDX token holders
-export const NETWORK_ID_MAINNET: string = 'dydx-mainnet-1';
+export const NETWORK_ID_MAINNET: string = 'dydxprotocol-testnet';
 
 // ------------ Gas Denoms ------------
 export enum SelectedGasDenom {
